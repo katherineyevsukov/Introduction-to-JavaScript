@@ -17,12 +17,12 @@ Do the following:
 
    HINT: no function required
 */
-const votingAge = 20;
+const votingAge = 16;
 
 if (votingAge >= 18) {
   console.log(true);
 }
-else {
+else if (votingAge <18 ) {
   console.log(false);
 }
 
@@ -55,6 +55,7 @@ Do the following:
 
 
 
+
 /*
 Task 1d - Multiply
  
@@ -66,7 +67,7 @@ Do the following:
 
 function multiply(a, b){
     const newNumber = a * b
-    return newNumber
+    return newNumber 
   }
 
 
@@ -81,9 +82,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-const humanYears = 27
 
-function dogYears(humanYears, dogYears){
+
+function dogYears(humanYears){
     dogYears = humanYears * 7
     return dogYears
 }
@@ -230,9 +231,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score >= 90 && score <= 100){
+    return 'you got an A';
+  }else if (score >= 80 && score <= 89){
+    return 'you got a B';
+  }else if (score >= 70 && score <=79){ 
+    return 'you got a C';
+  }else if (score >= 60 && score <=69){
+    return 'you got a D';
+  }else if (score < 60);{
+    return 'you got an F';
   }
+}
+
   
   
 
